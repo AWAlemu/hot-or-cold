@@ -233,31 +233,37 @@ h2 {
 	font-size: 1.5em;
 }
 
-input {
+#userGuess {
 	width: 300px;
 	height: 50px;
-	display: block;
-	padding: 0.8em 0;
 	margin: 0.8em auto 0;
-	background: #50597b;
-	color: #fff;
+	background: #f2f2f2;
+	color: #394264;
 	border: solid 1px #1f253d;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
 
-#guessButton {
-	background: #1F253D;
-	color: #95a5a6;
+#guessButton, #playAgain {
+	padding: 0.15em 1em;
+	margin: 0.8em auto 0;
+	background: #66ff66;
+	border: solid 1px #1f253d;
+	border-radius: 4px;
+	color: #394264;
 	font-size: 2em;
-	padding: 0.2em;
 	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 	-webkit-transition: background 1s ease-in-out;
 	-moz-transition: background 1s ease-in-out;
 	-ms-transition: background 1s ease-in-out;
 	-o-transition: background 1s ease-in-out;
 	transition: background 1s ease-in-out;
+}
+#playAgain {
+	display: none;
 }
 
 #guessButton:hover {

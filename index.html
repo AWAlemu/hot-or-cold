@@ -45,11 +45,12 @@
 
 		<section class="game"> <!-- Guessing Section -->
 			
-			<h2 id="feedback">Make your Guess!</h2>
+			<h2 id="feedback"></h2>
 
 			<form>
-				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="Enter your Guess" required/>
-      			<input id="guessButton" class="button" name="submit" value="Guess"/>
+				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" placeholder="Enter Your Guess" onfocus="this.placeholder=''" onblur=" this.placeholder='Enter Your Guess'"/>
+      			<button id="guessButton">Guess</button>
+      			<button id="playAgain">Play Again</button>
 			</form>
 			
       		<p>Guess #<span id="count"></span>!</p>
